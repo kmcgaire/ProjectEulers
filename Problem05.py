@@ -1,4 +1,3 @@
-
 def ismultiple(number, x):
 		if number % x == 0:
 			return True
