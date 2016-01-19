@@ -10,6 +10,11 @@ def prime_sieve(limit):
 
 def is_palindrome(number):
 	return str(number) == str(number)[::-1]
+	
+def is_perm(a,b):
+   stringA = sorted(str(a))
+   stringB = sorted(str(b))
+   return stringA == stringB
 
 def is_pandigital(number):
 	test= str(number)
