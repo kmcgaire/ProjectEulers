@@ -1,9 +1,12 @@
+import sys
+import os.path
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), os.path.pardir)))
 from Euler import is_palindrome
 import time
 
 def nextIteration(num):
    return num + int(str(num)[::-1])
-   
+
 def Problem55():
    maxIter = 50
    iterations = 0
@@ -17,9 +20,9 @@ def Problem55():
             count -= 1
             break
          iterations += 1
-   return count  
+   return count
 
-start = time.time()      
+start = time.time()
 print "Answer to Problem 55: ", Problem55()
 print "Answer took: ", time.time() - start, "seconds"
-            
+
